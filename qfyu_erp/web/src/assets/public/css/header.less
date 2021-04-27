@@ -1,0 +1,48 @@
+.header-m{
+  width: 100%;height: 48px;min-width: 1200px;position: relative; box-shadow: 0 2px 4px 0 rgba(0,0,0,0.08);
+}
+.h-m-main{
+  position: relative;z-index: 999;width: 100%;height: 100%;
+  .layout-logo{
+    float: left;position: relative;top: 0;left: 0;width:268px;z-index: 5;overflow: hidden;cursor: pointer;
+    img{
+      display: block;width: auto;height: 36px;margin:6px 0;
+    }
+  }
+  .layout-nav{
+     position: absolute;right: 0;top:0;.pxfix(1100);min-width:932px;max-width: 1100px;z-index: 5;height: 48px;text-align: right;
+     .menu-list{
+       display: inline-block; min-width: 84px;max-width: 99px; .pxfix(99);font-size: 14px;text-align: right;
+       .icon{
+         font-size: 12px;padding-left: 5px;
+       }
+     }
+     .ivu-select-dropdown{
+       &.dropdown-main{
+          top:40px!important;
+       }
+       padding:0;margin:0;border-radius: 2px;
+     }
+     .ivu-dropdown-item,.ivu-dropdown-item-divided{
+       height: 32px;line-height: 32px;margin:0;padding:0 12px;border-top:none;
+       .t-name{
+         display: inline-block;min-width: 68px;
+       }
+       .icon{
+         font-size: 12px;padding-left: 12px;
+       }
+       &:before{
+         display: none!important;
+       }
+     }
+     .d-list-item{
+        min-width: 120px;width: auto; height: 32px;
+        .ivu-dropdown{
+          display: block;
+        }
+     }
+  }
+}
+.bottom-s{
+  display: block;color: #6a6a6a!important;margin-bottom:10px;
+}

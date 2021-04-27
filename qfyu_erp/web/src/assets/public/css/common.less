@@ -1,0 +1,187 @@
+@baseWidth:1440px;
+.pxfix(@w){
+    width:(@w/@baseWidth)*100vw;
+}
+[contenteditable]:focus{
+  outline: none;
+}
+body{
+  padding:0;margin: 0;
+}
+.layout{
+  width: 100%;height: 100%;min-width: 1200px;
+}
+.edit-td{
+  white-space: nowrap;overflow: hidden;
+  &:hover{
+    border:1px solid #9a9a9a;
+  }
+  &:focus{
+    border:1px solid #2d8cf0;
+  }
+}
+.ivu-form-item{
+  margin-bottom:6px!important;
+}
+.ser-form{
+  padding:5px;
+  .ivu-form-item{
+    margin-bottom:4px;
+  }
+}
+.over-ellipsis{
+  overflow: hidden;text-overflow: ellipsis;white-space: normal;white-space: nowrap;-webkit-box-sizing: border-box;box-sizing: border-box;
+}
+.page-m {
+  position: absolute;bottom: 5px;right: 10px;text-align: right;z-index: 5;width: 100%;height: 30px;line-height: 30px;
+}
+.nav-menu{
+  padding:5px 10px;
+}
+.ivu-btn .icon {
+  padding-right: 5px;
+}
+.ivu-split-trigger{
+  border:none;
+}
+.ivu-table-cell{
+  padding-left: 8px;padding-right: 8px;
+}
+.ivu-form .ivu-form-item-label{
+  padding:10px 8px 0 8px;
+}
+.ivu-split-trigger{
+  border:none!important;
+}
+.ivu-date-picker{
+  display: block;
+}
+/* 订单状态：背景-字体颜色 */
+.warning-bg-text{
+  color: #FAAD14;
+  background-color: rgba(250, 173, 20, 0.15);
+}
+.success-bg-text{
+  color: #52c41a;
+  background-color: rgba(82, 196, 26, 0.15);
+}
+.error-bg-text{
+  color: #ff4d4f;
+  background-color: rgba(255,77,79,0.15);
+}
+.violet-bg-text{
+  color: #855af8;
+  background-color: rgba(130,90,248,0.15);
+}
+.blue-bg-text{
+  background-color:rgba(29,101,255,0.15);
+}
+
+/* 订单状态：背景-字体颜色 */
+.success-text{
+  color: #52c41a;
+}
+.error-text{
+  color: #ff4d4f;
+}
+.warning-text{
+  color: #FAAD14;
+}
+
+/*** td 字体颜色 start **/
+.yellow-text{
+  color: #EE9900;
+  td{
+    color: #EE9900;
+  }
+}
+.green-text{
+  color: #52c41a;
+  td{
+    color: #52c41a;
+  }
+}
+.red-text{
+  color: #ff4d4f;
+  td{
+    color: #ff4d4f;
+  }
+}
+.violet-text{
+  color: #855AF8;
+  td{
+    color: #855AF8;
+  }
+}
+.brown-text{
+  color: #994500;
+  td{
+    color: #994500;
+  }
+}
+.pink-text{
+  color: #c41d7f;
+  td{
+    color: #c41d7f;
+  }
+}
+.italic-style{
+  font-style: italic ;
+  td{
+    font-style: italic ;
+  }
+}
+.blod-style td{
+  font-weight: bold ;
+}
+/*** td 字体颜色 end **/
+.ivu-form-item-content .ivu-input-wrapper{
+  display: block;
+}
+.ivu-form-item-content .ivu-input-group-with-append{
+  display: table;
+}
+
+/*** 颜色标识背景块 ***/
+.ident_dot{
+    display:inline-block;width:15px;height:15px;vertical-align:middle;margin-right:5px;
+}
+.yellow-bg{
+  background-color:#EE9900;
+}
+.green-bg{
+  background-color: #52c41a;
+}
+.red-bg{
+  background-color: #ff4d4f;
+}
+.violet-bg{
+  background-color: #855AF8;
+}
+.brown-bg{
+  background-color: #994500;
+}
+.pink-bg{
+  background-color: #c41d7f;
+}
+
+.clear-btn{border-right: none;border-left: none;}
+
+.w1200{width: 1200px;}
+
+::-webkit-scrollbar {/*滚动条整体样式*/
+  width: 8px;     /*高宽分别对应横竖滚动条的尺寸*/
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+  //border-radius: 8px;
+  -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+  background: #535353;
+}
+
+::-webkit-scrollbar-track {/*滚动条里面轨道*/
+  -webkit-box-shadow: inset 0 0 4px rgba(0,0,0,0.2);
+ // border-radius: 8px;
+  background: #EDEDED;
+}
